@@ -120,6 +120,52 @@ input[type="submit"],
   float: right;
 }
 
+#page_preloader__bg {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  -webkit-transition: opacity .1s ease-in-out .05s, z-index .1s ease-in-out .05s;
+  -moz-transition: opacity .1s ease-in-out .05s, z-index .1s ease-in-out .05s;
+  transition: opacity .1s ease-in-out .05s, z-index .1s ease-in-out .05s;
+
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#page_preloader__bg.off {
+  opacity: 0;
+  z-index: -10;
+}
+
+#page_preloader__img {
+  margin: -50px 0 0 -50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1001;
+  -webkit-transition: transform .2s ease-in-out;
+  -moz-transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+
+  -webkit-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+#page_preloader__img.off {
+  -webkit-transform: scale3d(0, 0, 1);
+  -ms-transform: scale3d(0, 0, 1);
+  -o-transform: scale3d(0, 0, 1);
+  transform: scale3d(0, 0, 1);
+}
+
 .h3-title h3 {
   float: left;
   font-size: 20px;
@@ -139,7 +185,7 @@ input[type="submit"],
   float: left;
   height: 160px;
   width: 350px;
-  background: url(assets/images/redesconnection_logo5.png) no-repeat center;
+  background: url(/assets/images/redesconnection_logo5.png) no-repeat center;
   border-top: none;
   padding: 10px 20px 10px;
   text-align: center;
@@ -429,7 +475,7 @@ label.icon-search span {
 }
 
 .banner-top1 {
-  background: url(assets/images/bg1.jpg) no-repeat center;
+  background: url(/assets/images/bg1.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -438,7 +484,7 @@ label.icon-search span {
 }
 
 .banner-top2 {
-  background: url(assets/images/bg2.jpg) no-repeat center;
+  background: url(/assets/images/bg2.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -447,7 +493,7 @@ label.icon-search span {
 }
 
 .banner-top3 {
-  background: url(assets/images/bg3.jpg) no-repeat center;
+  background: url(/assets/images/bg3.jpg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -656,12 +702,12 @@ span.icon_g_plus {
 }
 
 .footer-main-w3_agile {
-  background: url(assets/images/f.jpg) center no-repeat;
+  background: url(/assets/images/f.jpg) center no-repeat;
   background-size: cover;
 }
 
 .footer-dot {
-  background: url(assets/images/dott.png) repeat 0px 0px;
+  background: url(/assets/images/dott.png) repeat 0px 0px;
   background-size: 2px;
   -webkit-background-size: 2px;
   -moz-background-size: 2px;
@@ -814,7 +860,7 @@ label.header span {
   border: none;
   outline: none;
   font-size: 0.9em;
-  background: url(assets/images/icon.png) no-repeat 95% center #f5f5f5;
+  background: url(/assets/images/icon.png) no-repeat 95% center #f5f5f5;
   width: 100%;
   padding: 0.9em 1.5em;
   color: #000;
@@ -974,7 +1020,7 @@ label.header span {
 }
 
 .about-left {
-  background: url(assets/images/about.jpg) no-repeat center;
+  background: url(/assets/images/about.jpg) no-repeat center;
   background-size: cover;
   padding: 0;
 }
@@ -1068,7 +1114,7 @@ h4.sub span {
 /*-- //about --*/
 
 .banner-bg2 {
-  background: url(assets/images/bg1.jpg) no-repeat center;
+  background: url(/assets/images/bg1.jpg) no-repeat center;
   background-size: cover;
   min-height: 460px;
 }
@@ -1315,7 +1361,7 @@ input.checkbox:checked:after {
 /*-- services--*/
 
 .serv-grid1 {
-  background: url(assets/images/service.jpg) no-repeat center;
+  background: url(/assets/images/service.jpg) no-repeat center;
   background-size: cover;
   min-height: 435px;
   padding: 160px 25px 0;
@@ -1597,7 +1643,7 @@ h4.form-con-txt {
   position: absolute;
   right: 0;
   top: 0;
-  background: transparent url(assets/images/close.png) scroll no-repeat center center;
+  background: transparent url(/assets/images/close.png) scroll no-repeat center center;
   cursor: pointer;
   z-index: 9993;
   text-indent: -999em;
@@ -1622,12 +1668,12 @@ h4.form-con-txt {
 
 #cm-wrap #cm-prev {
   left: 0;
-  background: transparent url(assets/images/prev.png) scroll no-repeat 0 center;
+  background: transparent url(/assets/images/prev.png) scroll no-repeat 0 center;
 }
 
 #cm-wrap #cm-next {
   right: 0;
-  background: transparent url(assets/images/next.png) scroll no-repeat 100% center;
+  background: transparent url(/assets/images/next.png) scroll no-repeat 100% center;
 }
 
 #cm-wrap #cm-prev:hover,
@@ -1889,7 +1935,7 @@ div#team {
 }
 
 .team-grid1 {
-  background: url(assets/images/order1.jpg) no-repeat center;
+  background: url(/assets/images/order1.jpg) no-repeat center;
   background-size: cover;
   min-height: 520px;
   padding: 173px 74px 0;
@@ -2095,7 +2141,7 @@ div#team {
 
 /*-- //news --*/
 .about-slid {
-  background: url(assets/images/slide.jpg) no-repeat center;
+  background: url(/assets/images/slide.jpg) no-repeat center;
   min-height: 400px;
   background-size: cover;
 }
@@ -2119,7 +2165,7 @@ h6.slid {
 }
 
 .inner-main-bg {
-  background: url(assets/images/inner-bg.png) no-repeat center;
+  background: url(/assets/images/inner-bg.png) no-repeat center;
   background-size: cover;
   min-height: 400px;
   padding: 0;
@@ -2201,7 +2247,7 @@ h5.main-title {
 
 /* //single */
 .mb-left {
-  background: url(assets/images/g7.jpg) no-repeat center;
+  background: url(/assets/images/g7.jpg) no-repeat center;
   background-size: cover;
   min-height: 400px;
 }
@@ -2354,7 +2400,7 @@ p.privacy-para {
   height: 35px;
   border: none;
   text-indent: 100%;
-  background: url(assets/images/move-up.png) no-repeat 0px 0px;
+  background: url(/assets/images/move-up.png) no-repeat 0px 0px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -o-border-radius: 50%;
@@ -3301,7 +3347,7 @@ p.privacy-para {
 
   .logo-nav-left {
     width: 45%;
-    background: url(assets/images/redesconnection_logo7.png) no-repeat center;
+    background: url(/assets/images/redesconnection_logo7.png) no-repeat center;
     background-size: auto;
     -webkit-background-size: auto;
     -moz-background-size: auto;
@@ -3405,7 +3451,7 @@ p.privacy-para {
 
 @media screen and (max-width: 600px) {
   .logo-nav-left {
-    background: url(assets/images/redesconnection_logo6.png) no-repeat center;
+    background: url(/assets/images/redesconnection_logo6.png) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -3632,7 +3678,7 @@ p.privacy-para {
 
 @media screen and (max-width: 480px) {
   .logo-nav-left {
-    background: url(assets/images/redesconnection_logo6.png) no-repeat center;
+    background: url(/assets/images/redesconnection_logo6.png) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -4338,7 +4384,7 @@ p.privacy-para {
 
 @media screen and (max-width: 320px) {
   .logo-nav-left {
-    background: url(assets/images/redesconnection_logo6.png) no-repeat center;
+    background: url(/assets/images/redesconnection_logo6.png) no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;

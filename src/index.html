@@ -37,7 +37,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 
 <body>
+<!--Loader-->
+<div id="page_preloader__bg" class=" off">
+  <img id="page_preloader__img" src="./assets/images/477.gif" alt="" class=" off">
+</div>
+
+<script>
+  preloaderBg = document.getElementById('page_preloader__bg');
+  preloaderImg = document.getElementById('page_preloader__img');
+
+  window.addEventListener('load', function () {
+    preloaderBg.className += " off";
+    preloaderImg.className += " off";
+  });
+
+  window.addEventListener('beforeunload', function () {
+    preloaderBg.className -= " off";
+    preloaderImg.className -= " off";
+  });
+</script>
+
 <app-root></app-root>
+
 <!-- js -->
 <script src="assets/js/jquery-2.2.3.min.js"></script>
 <!-- //js-->
@@ -73,7 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         $('html,body').animate({
           scrollTop: $(this.hash).offset().top
-        }, 1000);
+        }, 1000)
       });
     });
   }(jQuery))

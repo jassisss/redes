@@ -1,14 +1,99 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8">
-  <title>Redesconnection</title>
+  <title>RedesConnection</title>
+  <!-- for-mobile-apps -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="keywords" content="RedesConnection web, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design, serviços elétricos, pequenos serviços, serviços de rede, rede de computadores, rede lógica, rede física, engenharia, engenharia elétrica, engenharia de rede, engenharia civil, reparos, melhorias, a domicílio"/>
+
+  <!-- Icone e título na barra de título e endereço -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    addEventListener("load", function () {
+      setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+      window.scrollTo(0, 1);
+    }
+  </script>
+  <!-- //for-mobile-apps -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" media="all"/>
+
+  <!--banner slider  -->
+  <link rel="stylesheet" type="text/css" href="assets/css/JiSlider.css">
+  <!-- //banner-slider -->
+  <link href="assets/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i">
+
 </head>
+
 <body>
-  <app-root></app-root>
+<app-root></app-root>
+<!-- js -->
+<script src="assets/js/jquery-2.2.3.min.js"></script>
+<!-- //js-->
+<!--banner-slider-->
+<script src="assets/js/JiSlider.js"></script>
+<script>
+  (function ($) {
+
+    $(window).load(function () {
+      $('#JiSlider').JiSlider({
+        color: '#fff',
+        start: 1,
+        reverse: false
+      }).addClass('ff')
+    })
+
+  }(jQuery))
+
+</script>
+
+<!-- //banner-slider -->
+<!--search-bar-->
+<script src="assets/js/main.js"></script>
+<!--//search-bar-->
+<!-- start-smooth-scrolling -->
+<script src="assets/js/move-top.js"></script>
+<script src="assets/js/easing.js"></script>
+<script>
+  (function ($) {
+    $(document).ready(function () {
+      $(".scroll").click(function (event) {
+        event.preventDefault();
+
+        $('html,body').animate({
+          scrollTop: $(this.hash).offset().top
+        }, 1000);
+      });
+    });
+  }(jQuery))
+</script>
+<!-- //end-smooth-scrolling -->
+<!-- smooth-scrolling-of-move-up -->
+<script>
+  (function ($) {
+    $(document).ready(function () {
+      $().UItoTop({
+        easingType: 'easeOutQuart'
+      });
+    });
+  }(jQuery))
+</script>
+<script src="assets/js/SmoothScroll.min.js"></script>
+<!-- Bootstrap core JavaScript
+  ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/bootstrap.js"></script>
 </body>
+
 </html>

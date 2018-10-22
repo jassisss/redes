@@ -1,20 +1,293 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- header -->
+<div class="w3layouts-header">
+  <div class="container">
 
+    <div class="logo-nav-agileits">
+      <div class="logo-nav-left">
+        <h1>
+          <a routerLink="/">
+          </a>
+        </h1>
+      </div>
+
+      <div class="header-grid-left-wthree">
+        <div class="h3-title">
+          <h3>Entre em contato</h3>
+        </div>
+        <ul>
+          <li>
+            <span class="fa fa-envelope" aria-hidden="true"></span>
+            <a href="mailto:info@example.com">contato@redesconnection.com.br</a>
+          </li>
+          <li>
+            <span class="fa fa-mobile" aria-hidden="true"></span>+55 61 99687-0088
+          </li>
+          <li>
+            <span class="fa fa-mobile" aria-hidden="true"></span>+55 61 99115-7556
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="logo-nav-left1">
+      <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse"
+                  data-target="#bs-megadropdown-tabs">Menu
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+          <ul class="nav navbar-nav">
+            <li routerLinkActive="active">
+              <a routerLink="/">Site</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/about">Sobre nós</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/services">Serviços</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/projects">Projetos</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/plan">Planos</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/contact">Contato</a>
+            </li>
+            <li routerLinkActive="active">
+              <a routerLink="/status">Status do Serviço</a>
+            </li>
+            <li class="s-bar">
+              <div class="search-w3_agileits">
+                <input class="search_box" type="checkbox" id="search_box">
+                <label class="icon-search" for="search_box">
+                  <span class="fa fa-search" aria-hidden="true"></span>
+                </label>
+                <div class="search_form">
+                  <form action="#" method="post">
+                    <input type="search" name="Procurar" placeholder=" "/>
+                    <input type="submit" value="Busca">
+                  </form>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+
+</div>
+<!-- banner -->
+<div id="banner-slider" class="banner-silder">
+  <div id="JiSlider" class="jislider">
+    <ul>
+      <li>
+        <div class="banner-top banner-top1">
+          <div class="container">
+            <div class="banner-info info2">
+              <h3>serviços domésticos em uma visita</h3>
+              <p>Nos deixe fazer isso por você.</p>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="banner-top banner-top2">
+          <div class="container">
+            <div class="banner-info bg3 info2">
+              <h3>um serviço de reparo num clique</h3>
+              <p>reparar. &nbsp; melhorar. &nbsp; manter</p>
+            </div>
+
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="banner-top banner-top3">
+          <div class="container">
+            <div class="banner-info bg3">
+              <h3>Serviços de manutenção de propriedades</h3>
+              <p>Numa chamada se faz tudo.</p>
+            </div>
+
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- //header -->
+<router-outlet></router-outlet>
+<!-- footer -->
+<div class="footer-main-w3_agile">
+  <div class="footer-dot">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="col-md-4 col-sm-6 col-xs-6 footer-grid1 address">
+          <h4>Contato Informações</h4>
+          <ul>
+            <li>
+              <span class="fa fa-home" aria-hidden="true"></span>
+              <p>QNE 04 - Casa 06 - Taguatinga - Brasília - DF</p>
+            </li>
+            <li>
+              <span class="fa fa-envelope-o" aria-hidden="true"></span>
+              <a href="mailto:jassis@ibist.org.br">contato@redesconnection.com.br</a>
+            </li>
+            <li>
+              <span class="fa fa-phone" aria-hidden="true"></span>
+              <p>+55 61 99687-0088</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 footer-grid1 res">
+          <h4>Serviços</h4>
+          <ul>
+            <li>
+              <a href="#">reparação de problemas domésticos</a>
+            </li>
+            <li>
+              <a href="#">melhoria residencial</a>
+            </li>
+            <li>
+              <a href="#">manutenção doméstica</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-6 footer-grid1 ftr-img">
+          <h4>últimas postagens</h4>
+          <ul>
+            <li>
+              <a routerLink="/single">
+                <img src="../assets/images/t1.jpg" alt=" " class="img-responsive"/>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/single">
+                <img src="../assets/images/t2.jpg" alt=" " class="img-responsive"/>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/single">
+                <img src="../assets/images/t3.jpg" alt=" " class="img-responsive"/>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/single">
+                <img src="../assets/images/t4.jpg" alt=" " class="img-responsive"/>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/single">
+                <img src="../assets/images/t1.jpg" alt=" " class="img-responsive"/>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/single">
+                <img src="../assets/images/t2.jpg" alt=" " class="img-responsive"/>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/single">
+                <img src="../assets/images/t3.jpg" alt=" " class="img-responsive"/>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/single">
+                <img src="../assets/images/t2.jpg" alt=" " class="img-responsive"/>
+              </a>
+            </li>
+            <li>
+              <a routerLink="/single">
+                <img src="../assets/images/t4.jpg" alt=" " class="img-responsive"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-6 col-xs-6 footer-grid1">
+          <h4>legal</h4>
+          <ul>
+            <li>
+              <a routerLink="/privacy">Política de Privacidade</a>
+            </li>
+            <li>
+              <a href="#">Informações sobre Licença</a>
+            </li>
+            <li>
+              <a routerLink="/terms">Termos de Uso</a>
+            </li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="agileinfo-subscribe-grid text-center">
+        <img src="../assets/images/mail.png" alt="">
+        <h4>Mantenha-se atualizado com a nossa newsletter!</h4>
+        <p>Inscreva-se para receber perguntas e respostas úteis, informações sobre os próximos serviços e muito mais.</p>
+        <form action="#" method="post">
+          <input type="email" placeholder="Entre seu email.." name="Subscribe" required="">
+          <button class="btn1">inscreva-se</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cpy-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="logo-nav-left footer-top1">
+        <h2>
+          <a href="/">
+          </a>
+        </h2>
+      </div>
+      <div class="footer-social">
+        <h4>Conecte-se conosco</h4>
+        <ul>
+          <li>
+            <a href="#">
+              <span class="fa fa-facebook icon_facebook"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fa-twitter icon_twitter"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fa-dribbble icon_dribbble"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="fa fa-google-plus icon_g_plus"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="cpy-text">
+    <p>© 2018 RedesConnection Ltda. Todos os direitos reservados | Desenvolvido por
+      <a href="http://www.cgctec.com.br/" target="_blank">CGC Tecnologia Ltda.</a>
+    </p>
+  </div>
+
+</div>
+<!--//footer  -->

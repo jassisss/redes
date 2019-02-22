@@ -10,6 +10,14 @@ export class SingleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    window.scroll(0, 0);
+    const div = document.getElementById('elem');
+    const rect = div.getBoundingClientRect();
+    window.scrollBy({
+      top: rect.top,
+      left: 0,
+      behavior: 'smooth'
+    });
   }
 
 }

@@ -650,7 +650,6 @@ span.icon_g_plus {
 
 .footer-social h4 {
   color: #031f9a;
-  text-transform: capitalize;
   font-weight: 600;
   margin-bottom: 15px;
   font-size: 20px;
@@ -1137,7 +1136,7 @@ span.breadcrumbs a:hover {
 
 h4.main-title {
   font-size: 45px;
-  text-transform: capitalize;
+  //text-transform: capitalize;
   font-weight: bold;
   color: #031f9a;
   text-align: center;
@@ -1291,7 +1290,6 @@ input.checkbox:checked:after {
 
 .app-main h6 {
   font-size: 31px;
-  text-transform: capitalize;
   font-weight: 600;
   color: #031f9a;
 }
@@ -1314,7 +1312,6 @@ input.checkbox:checked:after {
 }
 
 .app-form p {
-  text-transform: capitalize;
   margin: 10px 0;
   font-size: 16px;
   color: #000;
@@ -1526,7 +1523,7 @@ h4.form-con-txt {
   font-size: 25px;
   color: #fff;
   letter-spacing: 1px;
-  text-transform: capitalize;
+  //text-transform: capitalize;
 }
 
 .agile-contact-top p {

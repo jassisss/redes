@@ -187,11 +187,13 @@ input[type="submit"],
   background: url(/assets/images/redesconnection_logo5.png) no-repeat center;
   padding: 10px 20px 10px;
   text-align: center;
-  border: 6px inset #febf00;
   position: relative;
+  /*
+  border: 6px inset #febf00
   -webkit-box-shadow: 5px 10px 10px 0 rgba(216, 216, 216, 0.78);
   -moz-box-shadow: 5px 10px 10px 0 rgba(216, 216, 216, 0.78);
   box-shadow: 5px 10px 10px 0 rgba(216, 216, 216, 0.78);
+  */
 }
 
 .logo-nav-left h1 a {

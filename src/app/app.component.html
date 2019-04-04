@@ -49,7 +49,7 @@
             <li routerLinkActive="active">
               <a routerLink="/">Site</a>
             </li>
-            <li routerLinkActive="active">
+            <li routerLinkActive="active" nada>
               <a routerLink="/about">Sobre nós</a>
             </li>
             <li routerLinkActive="active">
@@ -74,8 +74,8 @@
                   <span class="fa fa-search" aria-hidden="true"></span>
                 </label>
                 <div class="search_form">
-                  <form action="#" method="post">
-                    <input type="search" name="Procurar" placeholder=" "/>
+                  <form #fsearch="ngForm" (ngSubmit)="onSubmitSearch(fsearch)">
+                    <input type="search" name="procurar" placeholder=" " [(ngModel)]="procurar" />
                     <input type="submit" value="Busca">
                   </form>
                 </div>
@@ -243,8 +243,8 @@
         <img src="../assets/images/mail.png" alt="">
         <h4>Mantenha-se atualizado com a nossa newsletter!</h4>
         <p>Inscreva-se para receber perguntas e respostas úteis, informações sobre os próximos serviços e muito mais.</p>
-        <form action="#" method="post">
-          <input type="email" placeholder="Entre seu email.." name="Subscribe" required="">
+        <form #fsubscribe="ngForm" (ngSubmit)="onSubmitInscrever(fsubscribe)">
+          <input type="email" placeholder="Entre seu email.." name="subscribe" required="true" [(ngModel)]="subscribe">
           <button class="btn1">Inscreva-se</button>
         </form>
       </div>

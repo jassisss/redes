@@ -373,7 +373,7 @@ ul li.s-bar {
   display: inline-block;
   color: #031f9a;
   font-size: 14px;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   background: #febf00;
   border: none;
   text-transform: uppercase;

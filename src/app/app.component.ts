@@ -11,7 +11,6 @@ export class AppComponent implements OnInit{
 
   procurar: string = '';
   subscribe: string = '';
-  checkado: boolean = true;
 
   constructor(){
 
@@ -25,8 +24,6 @@ export class AppComponent implements OnInit{
     console.log(form.value.procurar);
     console.log(this.procurar);
 
-    this.checkado = false;
-
     this.procurar = '';
 
   }
@@ -39,7 +36,4 @@ export class AppComponent implements OnInit{
 
   }
 
-  searchChecked() {
-      this.checkado = !this.checkado;
-  }
 }

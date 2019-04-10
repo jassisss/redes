@@ -12,11 +12,13 @@ import {PrivacyComponent} from './components/privacy/privacy.component';
 import {TermsComponent} from './components/terms/terms.component';
 import { MainComponent } from './components/main/main.component';
 import { StatusComponent } from './components/status/status.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
-    SiteRoutingModule
+    SiteRoutingModule,
+    FormsModule
   ],
   declarations: [
     AboutComponent,

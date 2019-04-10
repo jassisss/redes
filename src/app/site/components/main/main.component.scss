@@ -1,0 +1,11 @@
+.text-error {
+  color: red;
+}
+
+.has-error>input, .has-error>textarea, .has-error>select {
+  border: 2px solid red !important;
+}
+
+.btn-disabled {
+  opacity: .5;
+}

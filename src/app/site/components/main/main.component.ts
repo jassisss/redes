@@ -9,6 +9,14 @@ import * as $ from 'jquery';
 })
 export class MainComponent implements OnInit {
 
+  contactForm: any = {
+    name: null,
+    email: null,
+    mobile: null,
+    address: null,
+    service: 0
+  };
+
   constructor() {
   }
 
@@ -18,6 +26,27 @@ export class MainComponent implements OnInit {
     $(`html,body`).animate({scrollTop: 0}, 1000);
 
   }
+
+  resetForm(form) {
+    form.setValue({
+      name: null,
+      email: null,
+      mobile: null,
+      address: null,
+      service: 0
+    })
+  }
+
+  onSubmitContact(form) {
+
+    console.log(this.contactForm);
+
+    console.log(form);
+
+    this.resetForm(form);
+
+  }
+
 
 }
 

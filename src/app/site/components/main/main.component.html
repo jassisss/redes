@@ -8,26 +8,30 @@
           <p>Nós resolvemos as suas necessidades de reparos domésticos!</p>
           <img src="../../../../assets/images/f1.png" alt=""/>
         </div>
-        <form action="#" method="post" class="banner_form">
-          <div class="sec-left">
-            <label class="contact-form-text">Nome</label>
-            <input placeholder="Seu nome " name="name" type="text" required="">
+        <form #fcontact="ngForm" (ngSubmit)="onSubmitContact(fcontact)" class="banner_form">
+          <div class="sec-left" [class.has-error]="!fname.valid && fname.touched">
+            <label class="contact-form-text control-label" for="fname">Nome</label>
+            <input placeholder="Seu nome " id="fname" name="name" type="text" required [(ngModel)]="contactForm.name" #fname="ngModel">
+            <div class="text-error" *ngIf="!fname.valid && fname.touched">Nome é obrigatório</div>
           </div>
-          <div class="sec-right">
-            <label class="contact-form-text">Email</label>
-            <input placeholder="xxx@xx.com.br " name="email" type="email" required="">
+          <div class="sec-right" [class.has-error]="!fmail.valid && fmail.touched">
+            <label class="contact-form-text control-label" for="fmail">E-mail</label>
+            <input placeholder="xxx@xx.com.br " id="fmail" name="email" type="email" required email [(ngModel)]="contactForm.email" #fmail="ngModel">
+            <div class="text-error" *ngIf="!fmail.valid && fmail.touched">E-mail inválido</div>
           </div>
-          <div class="sec-left">
-            <label class="contact-form-text">Celular</label>
-            <input placeholder="(99) 99999-9999" name="mobile" type="text" required="">
+          <div class="sec-left" [class.has-error]="!fmobile.valid && fmobile.touched">
+            <label class="contact-form-text control-label" for="fmobile">Celular</label>
+            <input placeholder="(99) 99999-9999" id="fmobile" name="mobile" type="text" required [(ngModel)]="contactForm.mobile" #fmobile="ngModel">
+            <div class="text-error" *ngIf="!fmobile.valid && fmobile.touched">Celular é obrigatório</div>
           </div>
-          <div class="form-tx">
-            <label class="contact-form-text">Endereço</label>
-            <textarea placeholder="Seu endereço" required=""></textarea>
+          <div class="form-tx" [class.has-error]="!faddress.valid && faddress.touched">
+            <label class="contact-form-text" for="faddress">Endereço</label>
+            <textarea placeholder="Seu endereço" id="faddress" name="address" required [(ngModel)]="contactForm.address" #faddress="ngModel"></textarea>
+            <div class="text-error" *ngIf="!faddress.valid && faddress.touched">Endereço é obrigatório</div>
           </div>
-          <div class="form-select sec-right">
-            <label class="contact-form-text">Escolha o serviço</label>
-            <select>
+          <div class="form-select sec-right" [class.has-error]="!fservice.valid && fservice.touched">
+            <label class="contact-form-text control-label" for="fservice">Escolha o serviço</label>
+            <select id="fservice" name="service" required [(ngModel)]="contactForm.service" #fservice="ngModel">
               <option value="0">---- Escolha ----</option>
               <option value="1">Serviço elétrico</option>
               <option value="2">Serviço de encanamento</option>
@@ -36,8 +40,9 @@
               <option value="5">Pintura</option>
               <option value="6">Outro</option>
             </select>
+            <div class="text-error" *ngIf="!fservice.valid && fservice.touched">Serviço é obrigatório</div>
           </div>
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Enviar" [disabled]="!fcontact.valid" [class.btn-disabled]="!fcontact.valid">
         </form>
       </div>
       <div class="col-md-8 banner-btm-grid2">

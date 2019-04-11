@@ -27,23 +27,13 @@ export class MainComponent implements OnInit {
 
   }
 
-  resetForm(form) {
-    form.setValue({
-      name: null,
-      email: null,
-      mobile: null,
-      address: null,
-      service: 0
-    })
-  }
-
   onSubmitContact(form) {
 
     console.log(this.contactForm);
 
     console.log(form);
 
-    this.resetForm(form);
+    form.reset()
 
   }
 
